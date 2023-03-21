@@ -1,0 +1,39 @@
+.navbar__logo{
+    margin-right: auto;
+}
+.navbar__logo img{
+Width:210.32px;
+Height:68px;
+
+}
+.navbar{
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    color: #FF6060;
+    gap: 2rem;
+    width: 100%;
+}
+.navbar a{
+    text-decoration: none;
+    color: #FF6060;
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
+.navbar *:first-child{
+    margin-right: auto;
+}
+@media screen and (width <= 767px){
+    .navbar{
+text-transform: uppercase;
+font-size: 12px;
+gap: 1rem;
+    }
+    .navbar__logo img {
+        width: 178px;  
+    }
+    .line{
+        white-space: nowrap;
+    }
+}

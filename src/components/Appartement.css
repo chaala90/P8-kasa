@@ -1,0 +1,46 @@
+.Appartement {
+    margin: 1rem 0rem 0rem 0rem;
+    width: 30%;
+    position: relative;
+    
+}
+
+.Appartement  .titre{
+    font-size: 18px;
+    width: 43%;
+    position: absolute;
+    font-weight: bold;
+    color: #ffff;
+    bottom: 1rem;
+    left: 1rem;
+}
+    
+.Appartement img{
+    object-fit: cover;
+    border-radius: 1rem;
+    width: 90%;
+    height: 13rem;
+    margin-top: 2rem;
+    position: relative;
+}
+@media screen and (width <= 767px){
+    .Appartement{
+        width: 100%;
+        margin-top: 2rem 0 0 0;
+    }
+    .Appartement .titre{
+        font-size: 18px;
+        width: 42%;
+        
+    }
+}
+@media only screen and (max-width: 400px) and (min-width : 768px){
+    .Appartement img{
+    Width: 25%;
+    Height: 193px;
+    }
+    .Appartement .titre{
+        font-size: 12px;
+}
+}
+ 
