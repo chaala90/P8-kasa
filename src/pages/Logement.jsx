@@ -2,7 +2,7 @@ import React from "react"
 import Caroussel from "../components/caroussel"
 import Sectionlogement from "../components/section_logement"
 
-import logements from "./Logement.json"
+import logements from "../pages/Logement.json"
 import "../pages/ficheLogement.css"
 import { Link, useParams } from "react-router-dom"
 

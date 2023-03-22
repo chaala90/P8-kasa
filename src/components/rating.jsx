@@ -4,7 +4,7 @@ import "../pages/ficheLogement.css"
 import imgGrey from "../../public/star_rate-grey.png"*/
 /*import "./RatingStars.css";*/
 
-const RatingStars = ({ ratingStars }) => {
+function RatingStars(ratingStars) {
   const ratings = Array.from({ length: 5 }).map((rating, index) => {
     const numberOfStars = index + 1
 
