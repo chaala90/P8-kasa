@@ -13,7 +13,7 @@
 }
 @media only screen and (width <= 767px){
    .appartement__bloc{
-        margin: 4rem 0 10px 10px;
+    margin: 4rem 0 1rem 0rem;
         background-color: white;
         border-radius: 1rem;
         align-items: center;

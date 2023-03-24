@@ -1,20 +1,20 @@
 
 .slide{
-    Width: 100%;
-    Height: 23rem;
+    Width: 98%;
+    Height: 25rem;
     margin: 1rem auto;
 	object-fit: cover;
     border-radius: 1rem;
 }
 h1{
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     color: #ff6060;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 0rem;
 }
 h2{
     color: #ff6060;
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin-top: -0.5rem;
     font-weight: 300;
 }
@@ -27,22 +27,26 @@ h4{
 .rowcollapse h3{
     color: #ffff;
     background-color: #ff6060;
-    font-weight: 500;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: 1.25rem;
     border-radius: 0.25rem;
     height: 1rem;
-    padding: 10px 0 10px 10px;
+    padding: 0px 0 10px 10px;
 }
 button{
     background-color: #ff6060;
     border-radius: 2rem;
-    width: 103px;
     border: none;
-    height: 1.5rem;
-    font-size: 14px;
+    height: 1.75rem;
+    font-size: 1rem;
     color: #ffff;
     margin-right: 10px;
+    text-align: center;
+    width: 31%;
 }
+@media screen and (width <= 767px){
+    button{ 
+width: 27%;}}
 .rowTitle{
     display: flex;
     justify-content: space-between;
@@ -73,6 +77,9 @@ button{
 .count{
     color: #ffff;
     position: relative;
+    bottom: 3rem;
+    font-weight: 600;
+    font-family: 'Montserrat';
 }
 .number{
     position: absolute;
@@ -80,19 +87,21 @@ button{
     font-weight: 600;
 }
 
-.redstar{
-    color: #ff6060;
-    font-size: 1.25rem;
+.imgColored, .imgGrey{
+    width: 85%;
 }
-.greystar{
-    color: #C4C4C4;
-    font-size: 1.25rem;
-}
-.bloc_description {
+
+.bloc_descri {
     margin-bottom: 1rem;
     width: 49%;
     
 }
+@media screen and (width <= 767px){
+    .bloc_descri {
+        margin-bottom: 0rem;
+        width: 100%;
+    }
+}  
 .half{
     color: #fff;
     background-color: #ff6060;
@@ -126,18 +135,18 @@ button{
 	width: 100%;
 }
 .arrow_left{
-    left: 10px;
-    width: 5%;
+    left: 26px;
+    width: 4%;
     height: 62px;
 	z-index: 1;
     position: absolute;
 
 }
 .arrow_right{
-    right: 10px;
-    width: 5%;
-    height: 62px;
-	z-index: 1;
+    right: 26px;
+    width: 4%;
+    height: 51px;
+    z-index: 1;
     position: absolute;
 
 }
@@ -150,9 +159,9 @@ button{
         justify-content: space-between;
         align-items: center;
     }
-    .half{
+   /* .half{
         width:100%
-    }
+    }*/
     .rowcollapse{
         flex-direction: column;
     }

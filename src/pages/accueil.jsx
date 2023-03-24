@@ -1,11 +1,13 @@
-import React from "react";
-import Appartements from "../components/bloc_appartements";
-import Banner from "../components/banner";
+import React from "react"
+import Appartements from "../components/bloc_appartements"
+import Banner from "../components/banner"
 //const Accueil =()=>{
-  function Accueil(){
-    return (<div>
-        <Banner />
+function Accueil() {
+  return (
+    <div>
+      <Banner />
       <Appartements />
-    </div>)
+    </div>
+  )
 }
-export default Accueil;
+export default Accueil

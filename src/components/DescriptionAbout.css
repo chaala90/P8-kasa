@@ -1,28 +1,29 @@
 .DescriptionAbout{
-   margin: 0.5rem auto 1rem; 
-   width: 95%;
-   font-family: "Montserrat", "sans serif";
-   font-weight: 400;
-   font-size: 24px;
+    margin: 0.5rem auto 1rem;
+    width: 95%;
+    font-family: "Montserrat", "sans serif";
+    font-weight: 400;
+    font-size: 24px;
 }
 .bloc_description{
-    margin-bottom: 1rem;
+    width: 94%;
+    margin: 1rem auto;
 }
 .TitleAbout {
     color: #fff;
     background-color: #ff6060;
-    height: 47px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     font-size: 24px;
     border-radius: 5px;
     padding-left: 1rem;
+    padding-top: 0.5rem;
 }
 .TitleAbout h2 {
     font-weight: 400;
     color: #ffff;
-    margin-top: 0.5rem;
+    /*margin-top: 0.5rem;*/
+    font-size: 1.5rem;
 }
 .TitleAbout i{
 margin-right: 1rem;

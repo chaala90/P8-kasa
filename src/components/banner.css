@@ -14,6 +14,7 @@
     height: 222px;
     border-radius: 15px;
     margin-top: 0.5rem;
+    object-fit: cover;
 }
 .banner p{
     position: relative;
@@ -29,7 +30,7 @@
 .banner img{
     font-size: 24px;
     font-weight: 400;
-    width: 90%;
+    width: 84%;
     height: 130px;
     border-radius: 15px;
 }

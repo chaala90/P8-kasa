@@ -1,9 +1,10 @@
 .navbar__logo{
     margin-right: auto;
 }
+
 .navbar__logo img{
-Width:210.32px;
-Height:68px;
+    width: 79%;
+    height: 3.25rem;
 
 }
 .navbar{
@@ -30,9 +31,12 @@ text-transform: uppercase;
 font-size: 12px;
 gap: 1rem;
     }
-    .navbar__logo img {
+    .navbar *:first-child{
+    width: 80%;
+    height: 3rem;}
+    /*.navbar__logo img {
         width: 178px;  
-    }
+    }*/
     .line{
         white-space: nowrap;
     }

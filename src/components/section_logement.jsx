@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
 import "../pages/ficheLogement.css"
 import RatingStars from "./rating"
-import Collapse_logement from "../components/collapse_logement"
-import Collapse_logement2 from "../components/collapse_logement2"
+import CollapseLogement from "./collapseLogement"
+import CollapseLogement2 from "./collapseLogement2"
 
 const Sectionlogement = ({
   ratingStars,
@@ -10,21 +10,11 @@ const Sectionlogement = ({
   description,
   hostname,
   hostpicture,
-  rating,
   location,
   pictures,
   equipments,
   tags,
 }) => {
-  /*const [appart, setappart] = useState([])
-  useEffect(fetchLogement, [])
-
-  function fetchLogement() {
-    fetch("logement.json")
-      .then((response) => response.json())
-      .then((response) => setappart(response))
-      .catch(console.error)
-  }*/
   return (
     <>
       <div className="rowTitle">
@@ -39,19 +29,24 @@ const Sectionlogement = ({
             <img className="badge" src={hostpicture} alt="badge" />
           </div>
           <RatingStars ratingStars={ratingStars} />
-          {/* <div className="rowstar">
-          <i className="fa-solid fa-star redstar"></i>
-          <i className="fa-solid fa-star redstar"></i>
-          <i className="fa-solid fa-star redstar"></i>
-          <i className="fa-solid fa-star greystar"></i>
-          <i className="fa-solid fa-star greystar"></i>
-  </div>*/}
         </div>
       </div>
 
       <div className="rowcollapse">
-        <Collapse_logement />
-        <Collapse_logement2 />
+        <CollapseLogement
+          title="Description"
+          description={<p className="">{`${description}`}</p>}
+        />
+        <CollapseLogement2
+          title="Équipements"
+          description={
+            <ul className="">
+              {equipments.map((equipment) => {
+                return <li key={`${equipment}`}>{equipment}</li>
+              })}
+            </ul>
+          }
+        />
       </div>
     </>
   )

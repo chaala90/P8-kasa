@@ -7,7 +7,7 @@ function Collapse_logement2() {
     setShowContent(!showContent)
   }
   return (
-    <div className="bloc_description">
+    <div className="bloc_descri">
       <div className="half" onClick={handleToggle}>
         <h3>Équipements</h3>
         {showContent ? (

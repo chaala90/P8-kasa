@@ -1,19 +1,28 @@
-import React from "react"
 import "../pages/ficheLogement.css"
-/*import imgColored from "../../public/star_rate-colored.png"
-import imgGrey from "../../public/star_rate-grey.png"*/
-/*import "./RatingStars.css";*/
-
-function RatingStars(ratingStars) {
+import imgColored from "../assets/images/star_rate-colored.png"
+import imgGrey from "../assets/images/star_rate-grey.png"
+function RatingStars({ ratingStars }) {
+  const colors = ["#F44336", "#FFC107", "#FFEB3B", "#4CAF50", "#2196F3"]
   const ratings = Array.from({ length: 5 }).map((rating, index) => {
     const numberOfStars = index + 1
 
     return (
       <span key={index}>
         {ratingStars >= numberOfStars ? (
-          <img src="star_rate-colored.png" alt="star colored" rating={rating} />
+          <img
+            className="imgColored"
+            src={imgColored}
+            alt="star colored"
+            rating={rating}
+            style={{ filter: `drop-shadow(0 0 2px ${colors[index]})` }}
+          />
         ) : (
-          <img src="star_rate-grey.png" alt="grey star" rating={rating} />
+          <img
+            className="imgGrey"
+            src={imgGrey}
+            alt="grey star"
+            rating={rating}
+          />
         )}
       </span>
     )

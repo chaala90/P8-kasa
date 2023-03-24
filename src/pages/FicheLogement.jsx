@@ -1,24 +1,31 @@
 import React from "react"
 import Caroussel from "../components/caroussel"
 import Sectionlogement from "../components/section_logement"
-
-import logements from "../pages/Logement.json"
+import logements from "./Logement.json"
 import "../pages/ficheLogement.css"
-import { Link, useParams } from "react-router-dom"
+import { Navigate, useParams } from "react-router-dom"
 
 function FicheLogement() {
-  const { paramId } = useParams()
-  let logement = logements.find((logement) => logement.id === paramId)
+  const { id } = useParams()
+  let logement = logements.find((logement) => logement.id === id)
   /*appart || {}*/
   if (!logement) {
-    return <Link to="*" />
+    return <Navigate to="*" />
   }
-  const { title, description, host, rating, location, equipments, tags } =
-    logement
+  const {
+    title,
+    host,
+    location,
+    tags,
+    rating,
+    pictures,
+    description,
+    equipments,
+  } = logement
 
   return (
     <>
-      <Caroussel />
+      <Caroussel pictures={pictures} />
       <Sectionlogement
         title={title}
         description={description}
