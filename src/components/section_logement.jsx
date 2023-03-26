@@ -21,7 +21,10 @@ const Sectionlogement = ({
         <div>
           <h1>{title}</h1>
           <h2>{location}</h2>
-          {tags && tags.map((tag, index) => <button key={index}>{tag}</button>)}
+          <div className="button">
+            {tags &&
+              tags.map((tag, index) => <button key={index}>{tag}</button>)}
+          </div>
         </div>
         <div className="column">
           <div className="rowstar">
@@ -35,7 +38,7 @@ const Sectionlogement = ({
       <div className="rowcollapse">
         <CollapseLogement
           title="Description"
-          description={<p className="">{`${description}`}</p>}
+          description={<span className="">{`${description}`}</span>}
         />
         <CollapseLogement2
           title="Équipements"

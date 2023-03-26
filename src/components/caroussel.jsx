@@ -19,20 +19,24 @@ function Caroussel({ pictures }) {
   return (
     <div className="caroussel">
       <img className="slide" src={pictures[currentSlide]} alt="logement" />
-      <img
-        className="arrow_left"
-        onClick={previousSlide}
-        src={arrowLeft}
-        alt="Previous slide"
-      />
-      <img
-        className="arrow_right"
-        onClick={nextSlide}
-        src={arrowRight}
-        alt="Next slide"
-      />
+      {pictures.length > 1 && (
+        <>
+          <img
+            className="arrow_left"
+            onClick={previousSlide}
+            src={arrowLeft}
+            alt="Previous slide"
+          />
+          <img
+            className="arrow_right"
+            onClick={nextSlide}
+            src={arrowRight}
+            alt="Next slide"
+          />
+        </>
+      )}
       <div className="count">
-        {currentSlide + 1}/{pictures.length}
+        {pictures.length > 1 ? `${currentSlide + 1}/${pictures.length}` : ""}
       </div>
     </div>
   )
