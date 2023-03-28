@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import "../pages/ficheLogement.css"
 import RatingStars from "./rating"
 import CollapseLogement from "./collapseLogement"

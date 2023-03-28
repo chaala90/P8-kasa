@@ -12,9 +12,12 @@
     color:#ff6060;
     text-decoration: none;
     font-size: 1rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: inline-block;
 }
 .errorPage a:hover{
     text-decoration: underline;
+}
+@media screen and (width <= 767px){
+
 }
