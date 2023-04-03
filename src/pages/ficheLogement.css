@@ -85,16 +85,16 @@ button{
 }
 .arrow_left{
     left: 26px;
-    width: 4%;
-    height: 62px;
+    width: 2%;
+    height: 1.5em;
 	z-index: 1;
     position: absolute;
 
 }
 .arrow_right{
     right: 26px;
-    width: 4%;
-    height: 51px;
+    width: 2%;
+    height: 1.5em;
     z-index: 1;
     position: absolute;
 }
@@ -197,12 +197,12 @@ button{
         }
         .arrow_left{
             left: 19px;
-            width: 8%;
-            height: 1.5rem;}
+            width: 5%;
+            height: 1rem;}
             .arrow_right{
                 right: 19px;
-                width: 8%;
-                height: 1.5rem;}
+                width: 5%;
+                height: 1rem;}
             .rowTitle{
                 flex-direction: column;
             }
