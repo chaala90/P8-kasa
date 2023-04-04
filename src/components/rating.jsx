@@ -2,7 +2,7 @@ import "../pages/ficheLogement.css"
 import imgColored from "../assets/images/star_rate-colored.png"
 import imgGrey from "../assets/images/star_rate-grey.png"
 function RatingStars({ ratingStars }) {
-  const colors = ["#F44336", "#FFC107", "#FFEB3B", "#4CAF50", "#2196F3"]
+  /* const colors = ["#F44336", "#FFC107", "#FFEB3B", "#4CAF50", "#2196F3"]*/
   const ratings = Array.from({ length: 5 }).map((rating, index) => {
     const numberOfStars = index + 1
 
@@ -14,7 +14,7 @@ function RatingStars({ ratingStars }) {
             src={imgColored}
             alt="star colored"
             rating={rating}
-            style={{ filter: `drop-shadow(0 0 2px ${colors[index]})` }}
+            /*style={{ filter: `drop-shadow(0 0 2px ${colors[index]})` }}*/
           />
         ) : (
           <img

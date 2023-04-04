@@ -13,9 +13,9 @@ function Fiabilité() {
       <div className="TitleAbout" onClick={handleToggle}>
         <h2>Fiabilité</h2>
         {showContent ? (
-          <i className="fa-sharp fa-solid fa-chevron-down ClickToShow" />
+          <i className="fa-sharp fa-solid fa-chevron-down" />
         ) : (
-          <i className="fa-solid fa-chevron-up ClickToHide" />
+          <i className="fa-solid fa-chevron-up" />
         )}
       </div>
       {showContent && (
